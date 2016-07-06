@@ -3,6 +3,7 @@ MAINTAINER Albert Dixon <albert@dixon.rocks>
 
 ENTRYPOINT ["/sbin/tini", "--", "/sbin/entry"]
 CMD ["/sbin/start"]
+VOLUME ["/data"]
 EXPOSE 8181
 
 ENV PATH=/src/plexpy:$PATH \
