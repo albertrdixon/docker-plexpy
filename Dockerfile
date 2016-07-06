@@ -13,4 +13,6 @@ RUN chmod +rx /sbin/entry /sbin/start \
     && apk install --update --purge \
         git \
         python \
-        tini
+        tini \
+    && addgroup -g 1000 pyplex \
+    && adduser -s /sbin/nologin -D -h /src -G pyplex -u 1000 pyplex

@@ -1,0 +1,1 @@
+cmd: 'python -u ${APP_HOME}/PlexPy.py --datadir ${APP_HOME}'
