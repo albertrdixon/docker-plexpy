@@ -20,7 +20,9 @@ RUN chmod +rx /sbin/entry /sbin/start \
     && tar xvzf /es.tgz -C /bin \
     && apk add -U --progress --purge \
         git \
+        geoip \
         python \
+        py-ipaddress \
         tini \
     && addgroup -g 1000 plexpy \
     && adduser -s /sbin/nologin -D -h /src -G plexpy -u 1000 plexpy
