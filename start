@@ -1,4 +1,4 @@
 #!/bin/sh
 exec /bin/escarole --branch=${CHANNEL} \
   --update-interval=${UPDATE_INTERVAL} \
-  --uid=1000 --gid=1000 drzoidberg33/plexpy plexpy
+  --uid=1000 --gid=1000 JonnyWong16/plexpy plexpy
